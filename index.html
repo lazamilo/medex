@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Medex — From the hive to your home since 1954</title>
+  <meta name="description" content="Medex: royal jelly, propolis, honey and bee-based dietary supplements from Slovenia since 1954.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=24">
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announce" aria-hidden="true">
+    <div class="announce__track">
+      <span data-i18n="an.1">From the hive to your home since 1954</span><b>⬢</b><span data-i18n="an.2">90 international awards</span><b>⬢</b><span data-i18n="an.3">Extra 5% off when you join our newsletter</span><b>⬢</b><span data-i18n="an.4">Clinically proven top quality</span><b>⬢</b>
+      <span data-i18n="an.1">From the hive to your home since 1954</span><b>⬢</b><span data-i18n="an.2">90 international awards</span><b>⬢</b><span data-i18n="an.3">Extra 5% off when you join our newsletter</span><b>⬢</b><span data-i18n="an.4">Clinically proven top quality</span><b>⬢</b>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__row">
+      <a href="#top" class="logo" aria-label="Medex"><img src="assets/real/logo.png" alt="Medex" class="logo__img" width="879" height="283"></a>
+
+      <div class="search" id="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" placeholder="Search products" data-i18n-attr="placeholder:search.ph;aria-label:search.ph" aria-label="Search products" autocomplete="off">
+        <div class="search__results" id="searchResults" hidden></div>
+      </div>
+
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Language / Jezik" id="lang">
+          <span class="lang__pill" aria-hidden="true"></span>
+          <button type="button" data-lang="sl" aria-label="Slovenščina">SL</button>
+          <button type="button" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <a href="#" class="signin" data-i18n="nav.signin">Sign in</a>
+        <button class="cart-btn" id="cartBtn" aria-label="Cart" data-i18n-attr="aria-label:cart.title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="menu" aria-label="Main">
+      <div class="menu__item menu__item--mega">
+        <button class="menu__link" id="megaBtn" aria-expanded="false"><span data-i18n="nav.all">All products</span> <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg></button>
+        <div class="mega" id="mega">
+          <div class="mega__grid" id="megaGrid"></div>
+          <a href="#bestsellers" class="mega__promo">
+            <img src="assets/real/hero.jpg" alt="">
+            <span><b data-i18n="mega.promoT">Royal jelly for immunity</b><small data-i18n="mega.promoS">The biggest secret of the hive →</small></span>
+          </a>
+        </div>
+      </div>
+      <a href="#lines" class="menu__link menu__link--hot"><span class="spark">✦</span> <span data-i18n="nav.gummies">NEW · Gummies</span></a>
+      <a href="#science" class="menu__link" data-i18n="nav.blog">Blog</a>
+      <a href="#why" class="menu__link" data-i18n="nav.story">Our story</a>
+      <a href="#newsletter" class="menu__link" data-i18n="nav.promo">Promotions</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero slider -->
+    <section class="hero" id="hero" aria-roledescription="carousel">
+      <div class="hero__hexes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero__slides" id="heroSlides">
+        <article class="slide is-active" data-theme="yellow">
+          <div class="slide__text">
+            <span class="hexbadge" data-i18n="hero.1b">Immunity</span>
+            <h1 class="slide__title" data-i18n="hero.1t">The biggest secret of the hive is not the honey.</h1>
+            <p class="slide__sub" data-i18n="hero.1s">It's royal jelly. For immunity.</p>
+            <a href="#bestsellers" class="btn btn--dark"><span data-i18n="hero.1c">View the offer</span> <i>→</i></a>
+          </div>
+          <div class="slide__media"><img src="assets/real/hero.jpg" alt="Medex gelée royale boxes with royal jelly vials" data-i18n-attr="alt:alt.hero1"></div>
+        </article>
+        <article class="slide" data-theme="coral">
+          <div class="slide__text">
+            <span class="hexbadge hexbadge--new" data-i18n="badge.new">NEW</span>
+            <h2 class="slide__title" data-i18n="hero.2t">Up to 96% fruit for 100% effect.</h2>
+            <p class="slide__sub" data-i18n="hero.2s">Gummies: functional fruit candies, almost just fruit.</p>
+            <a href="#lines" class="btn btn--dark"><span data-i18n="hero.2c">Discover Gummies</span> <i>→</i></a>
+          </div>
+          <div class="slide__media"><img src="assets/real/gummies.jpg" alt="Medex Gummies with fresh fruit" data-i18n-attr="alt:alt.hero2"></div>
+        </article>
+        <article class="slide" data-theme="lilac">
+          <div class="slide__text">
+            <span class="hexbadge" data-i18n="hero.3b">Junior</span>
+            <h2 class="slide__title" data-i18n="hero.3t">Natural support for little heroes.</h2>
+            <p class="slide__sub" data-i18n="hero.3s">Honey, propolis and royal jelly with vitamins C and D.</p>
+            <a href="#lines" class="btn btn--dark"><span data-i18n="hero.3c">For children</span> <i>→</i></a>
+          </div>
+          <div class="slide__media"><img src="assets/real/junior.jpg" alt="Girl tasting Medex Junior syrup" data-i18n-attr="alt:alt.hero3"></div>
+        </article>
+      </div>
+      <div class="hero__controls">
+        <button class="hero__arrow" id="heroPrev" aria-label="Previous">←</button>
+        <div class="hero__dots" id="heroDots"></div>
+        <button class="hero__arrow" id="heroNext" aria-label="Next">→</button>
+      </div>
+    </section>
+
+    <!-- Shop by need -->
+    <section class="needs">
+      <h2 class="sr" data-i18n="needs.title">Shop by need</h2>
+      <div class="needs__row" id="needs"></div>
+    </section>
+
+    <!-- Best-sellers -->
+    <section class="bestsellers" id="bestsellers">
+      <div class="head">
+        <h2 class="h2" data-i18n="best.title">Best-selling products</h2>
+        <div class="head__arrows">
+          <button class="round" id="bsPrev" aria-label="Previous">←</button>
+          <button class="round" id="bsNext" aria-label="Next">→</button>
+        </div>
+      </div>
+      <div class="rail" id="rail"></div>
+      <div class="rail__progress"><span id="railBar"></span></div>
+    </section>
+
+    <!-- Product lines bento -->
+    <section class="lines" id="lines">
+      <div class="head head--center">
+        <h2 class="h2" data-i18n="lines.title">From the hive to your home since 1954.</h2>
+        <p class="lead" data-i18n="lines.sub">Clinically proven top quality.</p>
+      </div>
+      <div class="bento">
+        <article class="tile tile--junior">
+          <div class="tile__img"><img src="assets/real/junior.jpg" alt="" loading="lazy"></div>
+          <div class="tile__body">
+            <span class="tile__kicker">Junior</span>
+            <h3 data-i18n="lines.jT">Natural support for little heroes</h3>
+            <p data-i18n="lines.jP">Only the best for children! Medex products for children contain natural ingredients such as honey, propolis and royal jelly, as well as vitamins C and D, which contribute to the normal functioning of the immune system. Tasty syrups and simple supplements are tailored to children's needs and help maintain their vitality and well-being throughout the year.</p>
+            <a href="#" class="more" data-i18n="more">More</a>
+          </div>
+        </article>
+        <article class="tile tile--gummies">
+          <div class="tile__img"><img src="assets/real/gummies.jpg" alt="" loading="lazy"></div>
+          <div class="tile__body">
+            <span class="tile__kicker">Gummies</span>
+            <h3 data-i18n="lines.gT">Up to 96% fruit for 100% effect</h3>
+            <p data-i18n="lines.gP">When life is running at 50%, when focus and energy are lacking and stress is taking over, or when our little ones need extra help and resilience, there is now a delicious way back to 100%. Gummies are functional fruit candies: almost just fruit, almost candy, but 100% what we need in everyday life.</p>
+            <a href="#" class="more" data-i18n="more">More</a>
+          </div>
+        </article>
+        <article class="tile tile--omega">
+          <div class="tile__img"><img src="assets/real/omega.jpg" alt="" loading="lazy"></div>
+          <div class="tile__body">
+            <span class="tile__kicker">Omega-3</span>
+            <h3 data-i18n="lines.oT">Omega-3 Alga Eye and Omega-3 Marine Vital</h3>
+            <p data-i18n="lines.oP">Do you sometimes feel like you have no energy, find it hard to concentrate, or have tired eyes from screens all day? Your body may be missing one of its most important building blocks: omega-3 fatty acids. Our new supplements offer a pure, natural and sustainable source.</p>
+            <a href="#" class="more" data-i18n="readmore">Read more</a>
+          </div>
+        </article>
+        <article class="tile tile--harmony">
+          <div class="tile__img"><img src="assets/real/beeharmony.jpg" alt="" loading="lazy"></div>
+          <div class="tile__body">
+            <span class="tile__kicker">BeeHarmony</span>
+            <h3 data-i18n="lines.hT">Proven to help relieve PMS and menopause symptoms</h3>
+            <p data-i18n="lines.hP">BeeHarmony combines the natural power of royal jelly, saffron extract and carefully selected vitamins. Vitamin B6 contributes to the regulation of hormonal activity, while vitamins D and K2 support bone health and immune function. Experience the harmony of nature and science.</p>
+            <a href="#" class="more" data-i18n="readmore">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <svg class="stats__path" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+        <path id="beePath" d="M0 120 C 150 20, 300 160, 450 80 S 750 10, 900 90 S 1100 140, 1200 40" />
+      </svg>
+      <div class="stats__bee" id="statsBee" aria-hidden="true">
+        <svg viewBox="0 0 40 30"><ellipse cx="14" cy="8" rx="8" ry="5" fill="#fff" opacity=".85"/><ellipse cx="24" cy="8" rx="8" ry="5" fill="#fff" opacity=".85"/><ellipse cx="20" cy="18" rx="11" ry="8" fill="#FFC800"/><path d="M15 11v14M21 10v16" stroke="#2E1F14" stroke-width="3"/><circle cx="31" cy="17" r="4.5" fill="#2E1F14"/></svg>
+      </div>
+      <div class="stat"><b data-count="70" data-suffix="+">0</b><span data-i18n="stat.1">years of tradition</span></div>
+      <div class="stat"><b data-count="120" data-suffix="+">0</b><span data-i18n="stat.2">unique products</span></div>
+      <div class="stat"><b data-count="90">0</b><span data-i18n="stat.3">international awards</span></div>
+      <div class="stat"><b data-count="2" data-unit="million">0</b><span data-i18n="stat.4">satisfied users</span></div>
+    </section>
+
+    <!-- Why Medex -->
+    <section class="why" id="why">
+      <div class="why__intro">
+        <h2 class="h2" data-i18n="why.title">Why choose Medex?</h2>
+        <p class="why__lead" data-i18n="why.intro">For over 70 years we have turned the wisdom of the hive into products that families trust. Four things guide everything we make.</p>
+        <a href="#" class="more" data-i18n="why.5k">Our story</a>
+      </div>
+      <ol class="vlist" id="vlist">
+          <li class="vrow is-on" data-i="0">
+            <span class="vrow__num">01</span>
+            <div class="vrow__text">
+              <h3 class="vrow__title" data-i18n="why.1t">Bees as inspiration</h3>
+              <p data-i18n="why.1p">For over 70 years, bees have been our role model. Their diligence, cooperation and respect for nature guide everything we make, as they have since 1954.</p>
+            </div>
+            <figure class="vrow__thumb"><img src="assets/real/family.jpg" alt="" loading="lazy"></figure>
+          </li>
+          <li class="vrow" data-i="1">
+            <span class="vrow__num">02</span>
+            <div class="vrow__text">
+              <h3 class="vrow__title" data-i18n="why.2t">Innovation</h3>
+              <p data-i18n="why.2p">We combine the wisdom of the hive with modern science. Together with experts we develop standardised formulas, such as royal jelly standardised for 10-HDA and propolis in alcohol- and water-based forms.</p>
+            </div>
+            <figure class="vrow__thumb"><img src="assets/gen-lab.jpg" alt="" loading="lazy"></figure>
+          </li>
+          <li class="vrow" data-i="2">
+            <span class="vrow__num">03</span>
+            <div class="vrow__text">
+              <h3 class="vrow__title" data-i18n="why.3t">Quality</h3>
+              <p data-i18n="why.3p">Every batch is checked in the laboratory, from raw material to finished product. The honey we fill is tested, safe and of controlled quality, and you can check it yourself.</p>
+            </div>
+            <figure class="vrow__thumb"><img src="assets/real/jars.jpg" alt="" loading="lazy"></figure>
+          </li>
+          <li class="vrow" data-i="3">
+            <span class="vrow__num">04</span>
+            <div class="vrow__text">
+              <h3 class="vrow__title" data-i18n="why.4t">Sustainability</h3>
+              <p data-i18n="why.4p">We work with beekeepers who look after healthy colonies, and we care for the meadows and forests that bees, and all of us, depend on.</p>
+            </div>
+            <figure class="vrow__thumb"><img src="assets/meadow-beehouse.jpg" alt="" loading="lazy"></figure>
+          </li>
+      </ol>
+    </section>
+
+    <!-- Honey check -->
+    <section class="honey" id="honey">
+      <div class="honey__card">
+        <div class="honey__text">
+          <h2 class="h2" data-i18n="honey.title">Check out the honey from Medex</h2>
+          <p data-i18n="honey.p">The honey we fill at Medex is tested, safe and of controlled quality. Enter the LOT number from the lid and see for yourself.</p>
+          <form class="lot" id="lotForm" autocomplete="off">
+            <div class="lot__cells" id="lotCells">
+              <input inputmode="numeric" maxlength="1" aria-label="LOT 1"><input inputmode="numeric" maxlength="1" aria-label="LOT 2"><input inputmode="numeric" maxlength="1" aria-label="LOT 3"><input inputmode="numeric" maxlength="1" aria-label="LOT 4"><input inputmode="numeric" maxlength="1" aria-label="LOT 5">
+            </div>
+            <button class="btn btn--yellow" type="submit"><span data-i18n="honey.btn">Check</span> <i>→</i></button>
+          </form>
+          <p class="hint"><span data-i18n="honey.hint">Try e.g.</span> <button type="button" class="link" id="lotDemo">24817</button></p>
+          <div class="lot__result" id="lotResult" hidden></div>
+        </div>
+        <div class="honey__img"><img src="assets/real/jars.jpg" alt="Jars of Medex honey" data-i18n-attr="alt:alt.jars" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- Science / hive -->
+    <!-- Brand film -->
+    <section class="film" id="film">
+      <div class="film__head">
+        <h2 class="film__title" data-i18n="film.title">Powered by bees,<br><em>proven by science.</em></h2>
+      </div>
+      <div class="film__stage" id="filmStage">
+        <div class="film__frame" id="filmFrame">
+          <img class="film__poster" src="assets/real/film-cover-top.jpg" alt="" loading="lazy">
+          <div class="film__shade"></div>
+          <button class="film__play" id="filmPlay" aria-label="Play the Medex film" data-i18n-attr="aria-label:film.play">
+            <svg class="film__ring" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="filmRing" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+              <text><textPath href="#filmRing" data-i18n="film.ring">POWERED BY BEES · PROVEN BY SCIENCE · WATCH THE FILM · </textPath></text>
+            </svg>
+            <span class="film__btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          </button>
+          <div class="film__caption"><b data-i18n="film.cap">Powered by bees, proven by science.</b><span>MEDEX d.o.o. · YouTube</span></div>
+        </div>
+        <div class="film__chip film__chip--a" data-depth="1.2"><i></i><span><b data-i18n="film.c1t">Slovenia</b><small data-i18n="film.c1s">The green heart of Europe</small></span></div>
+        <div class="film__chip film__chip--b" data-depth="-0.9"><i></i><span><b data-i18n="film.c2t">Bee-centric</b><small data-i18n="film.c2s">Patented ingredients &amp; clinically proven results</small></span></div>
+        <div class="film__chip film__chip--c" data-depth="0.7"><i></i><span><b>70+</b><small data-i18n="film.c3s">years of tradition</small></span></div>
+      </div>
+    </section>
+
+    <section class="science" id="science">
+      <div class="head head--center">
+        <p class="lead" data-i18n="sci.kicker">The power of bees. Scientific evidence.</p>
+        <h2 class="h2" data-i18n="sci.title">A hive full of natural wealth.</h2>
+      </div>
+      <div class="hive">
+        <div class="hive__bg"><img src="assets/honeycomb.jpg" alt="" loading="lazy"></div>
+        <div class="hive__cells" id="hiveCells"></div>
+        <div class="hive__panel" id="hivePanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <div class="nl__text">
+        <h2 class="h2" data-i18n="nl.title">Sweeten your inbox</h2>
+        <p data-i18n="nl.p">Receive sweet news and promotions straight to your inbox and never miss a discount again.</p>
+        <form class="nl__form" id="nlForm">
+          <label for="nlEmail" data-i18n="nl.label">Enter your email to receive coupons and news</label>
+          <div class="nl__row">
+            <input type="email" id="nlEmail" required placeholder="your@email.com" data-i18n-attr="placeholder:nl.ph">
+            <button class="btn btn--dark" type="submit" data-i18n="nl.btn">Sign up</button>
+          </div>
+          <label class="nl__consent"><input type="checkbox" required> <span data-i18n="nl.consent">I agree to the general terms and the privacy policy.</span></label>
+          <p class="nl__ok" id="nlOk" hidden data-i18n="nl.ok">Thank you! Your 5% discount code is on its way to your inbox. 🐝</p>
+        </form>
+      </div>
+      <div class="nl__card" id="nlCard">
+        <img src="assets/gen-mascot.jpg" alt="Bee mascot carrying an envelope" data-i18n-attr="alt:alt.mascot">
+        <div class="nl__deal"><small data-i18n="nl.extra">Extra</small><b data-i18n="nl.deal">5% off</b></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="logo logo--light" aria-label="Medex"><img src="assets/real/logo.png" alt="Medex" class="logo__img" width="879" height="283"></a>
+      <address>Medex Trade d.o.o.<br>Linhartova cesta 49A<br><span data-i18n="ft.city">1000 Ljubljana, Slovenia</span></address>
+    </div>
+    <div class="footer__cols">
+      <div><h4 data-i18n="ft.about">About us</h4><a href="#" data-i18n="ft.a1">Presentation</a><a href="#" data-i18n="ft.a2">History</a><a href="#" data-i18n="ft.a3">Contacts</a><a href="#" data-i18n="ft.a4">Company business card</a></div>
+      <div><h4 data-i18n="ft.links">Important links</h4><a href="#" data-i18n="ft.l1">Bee world</a><a href="#" data-i18n="ft.l2">Media center</a><a href="#" data-i18n="ft.l3">Blogs</a><a href="#" data-i18n="ft.l4">Tips</a></div>
+      <div><h4 data-i18n="ft.useful">Useful information</h4><a href="#" data-i18n="ft.u1">General terms and conditions</a><a href="#" data-i18n="ft.u2">Privacy policy</a><a href="#" data-i18n="ft.u3">More about cookies</a><a href="#" data-i18n="ft.u4">Delivery</a><a href="#" data-i18n="ft.u5">Complaints</a></div>
+      <div><h4 data-i18n="ft.pay">Payment options</h4><div class="pills"><span>Visa</span><span>Mastercard</span><span>Maestro</span><span>PayPal</span></div><h4 data-i18n="ft.delivery">Delivery options</h4><div class="pills"><span>Pošta Slovenije</span></div></div>
+    </div>
+    <p class="footer__legal"><span>© 2026 Medex Trade d.o.o.</span><span data-i18n="ft.concept">Redesign concept V2</span></p>
+  </footer>
+
+  <!-- Cart -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart__head"><h3 data-i18n="cart.title">Your cart</h3><button id="cartClose" aria-label="Close" data-i18n-attr="aria-label:cart.close">✕</button></div>
+    <ul class="cart__items" id="cartItems"></ul>
+    <div class="cart__foot">
+      <p class="cart__tip" data-i18n="cart.tip">Newsletter subscribers get an extra 5% off.</p>
+      <div class="cart__total"><span data-i18n="cart.total">Total</span><b id="cartTotal">€0.00</b></div>
+      <button class="btn btn--yellow btn--full"><span data-i18n="cart.checkout">Checkout</span> <i>→</i></button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="i18n.js?v=24"></script>
+  <script src="app.js?v=24"></script>
+</body>
+</html>
